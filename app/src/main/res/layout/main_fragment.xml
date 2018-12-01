@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.main.MainFragment">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotKeywordHeader"
+            android:padding="@dimen/header_title_padding"
+            android:textSize="@dimen/header_title_text_size"
+            android:textColor="@color/black"
+            android:text="@string/hot_keyword_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/hotKeyWordCarousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/hotKeywordHeader"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+            android:id="@+id/errorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_notify"
+            android:textSize="@dimen/error_noti_text_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/hotKeyWordCarousel"
+            app:layout_constraintStart_toStartOf="@+id/hotKeyWordCarousel"
+            app:layout_constraintBottom_toBottomOf="@+id/hotKeyWordCarousel"
+            app:layout_constraintTop_toTopOf="@+id/hotKeyWordCarousel"/>
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/progress_bar_size"
+            android:layout_height="@dimen/progress_bar_size"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/hotKeyWordCarousel"
+            app:layout_constraintStart_toStartOf="@+id/hotKeyWordCarousel"
+            app:layout_constraintBottom_toBottomOf="@+id/hotKeyWordCarousel"
+            app:layout_constraintTop_toTopOf="@+id/hotKeyWordCarousel"/>
+
+
+</android.support.constraint.ConstraintLayout>

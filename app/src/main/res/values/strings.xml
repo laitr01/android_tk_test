@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TikiAndroidTest</string>
+    <string name="hot_keyword_header">Từ khóa hot</string>
+    <string name="error_notify">Error is happend!</string>
+</resources>
