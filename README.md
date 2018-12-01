@@ -8,4 +8,4 @@ done for test!
 
 # Image Sample
 
-<img src="https://i.imgur.com/F1Ti1Uy.jpg" width=25% /><img src="https://i.imgur.com/cJVFSS1.jpg" width=25% /><img src="https://i.imgur.com/hItI2mA.jpg" width=25% />
+<img src="https://i.imgur.com/F1Ti1Uy.jpg" width=25% />   <img src="https://i.imgur.com/cJVFSS1.jpg" width=25% />     <img src="https://i.imgur.com/hItI2mA.jpg" width=25% />
